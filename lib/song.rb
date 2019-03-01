@@ -5,13 +5,14 @@ class Song
   attr_reader :artist
 
   @@songs = []
+  #TRACKS = []
 
   def initialize
     @@songs << self
   end
 
   def self.find_by_name(name)
-    @@songs.detect{|a| a.name == name}
+    @@songs.detect{|v| v.name == name}
   end
 
   def self.all

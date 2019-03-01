@@ -12,7 +12,7 @@ class Artist
   end
 
   def self.find_by_name(name)
-    @@artists.detect{|a| a.name == name}
+    @@artists.detect{|n| n.name == name}
   end
 
   def self.all
@@ -33,7 +33,7 @@ class Artist
   end
 
   def add_songs(songs)
-    songs.each { |song| add_song(song) }
+    songs.each { |track| add_song(track) }
   end
 
   def to_param
