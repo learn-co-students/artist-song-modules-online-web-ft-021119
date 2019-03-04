@@ -2,11 +2,11 @@ module Memorable
   module ClassMethods               # Calling this with # extend Memorable::ClassMethods => This is called namespacing!
 
     def reset_all
-      all.clear
+      self.all.clear
     end
 
     def count
-      all.count
+      self.all.count
     end
 
 
